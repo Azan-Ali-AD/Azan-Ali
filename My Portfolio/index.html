@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Azan Ali — UI/UX Designer & Product Specialist</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+    rel="stylesheet">
+  <!-- Supabase JS Client -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo"><span class="logo-accent">AA.</span> Azan Ali</a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary pulse-btn">Hire Me</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <div class="badge"><span class="status-dot"></span> Available for Projects</div>
+        <h1>Transforming Complex Ideas into <span class="gradient-text">Intuitive Products</span></h1>
+        <p class="hero-sub">1.5+ Years of experience creating Web Dashboards, Apps, High-Converting Hero Sections,
+          Wireframes & Banners.</p>
+
+        <div class="hero-metrics">
+          <div class="metric-card">
+            <h3 id="heroCount">150+</h3>
+            <p>Hero Sections</p>
+          </div>
+          <div class="metric-card">
+            <h3 id="dashCount">90+</h3>
+            <p>Dashboards</p>
+          </div>
+          <div class="metric-card">
+            <h3 id="appCount">120+</h3>
+            <p>App Layouts</p>
+          </div>
+          <div class="metric-card">
+            <h3 id="bannerCount">200+</h3>
+            <p>Banners</p>
+          </div>
+        </div>
+
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary">Explore Portfolio Grid</a>
+          <a href="https://www.behance.net/azanaliad" target="_blank" class="btn btn-secondary">Behance Profile</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="profile-card-wrapper glow-border">
+          <img src="profile-hero.jpg" alt="Azan Ali Headshot" class="profile-img" />
+          <div class="profile-tag">
+            <strong>Azan Ali</strong>
+            <span>UI/UX Designer @ Binary Hub</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container about-grid">
+      <div class="about-image-col">
+        <div class="workspace-card glow-border">
+          <img src="profile-about.jpg" alt="Azan Ali Workspace" class="about-img" />
+        </div>
+      </div>
+      <div class="about-content">
+        <h2>About Me</h2>
+        <p class="lead">16-year-old product design prodigy based in Gilgit, balancing academic excellence with
+          commercial product design.</p>
+        <blockquote class="quote">
+          "Great UI attracts users; exceptional UX retains them. I design with empathy, data-driven user flows, and
+          conversion psychology."
+        </blockquote>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="timeline-date">1.5+ Years Experience</span>
+            <h3>UI/UX Designer — Binary Hub (Gilgit)</h3>
+            <p>Designing scalable dashboards, app interfaces, web landing pages, and complex design systems.</p>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-date">Current Student</span>
+            <h3>11th Class (1st Year) — APSACS Gilgit</h3>
+            <p>Pursuing high school studies alongside active client and agency design roles.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Matrix -->
+  <section id="skills" class="skills-section">
+    <div class="container">
+      <h2 class="section-title">Skills & Expertise</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>UX Engineering</h3>
+          <p>User Research, Wireframing, Personas, User Flows, High-Fidelity Prototyping, Usability Testing.</p>
+        </div>
+        <div class="skill-card">
+          <h3>UI & Visual Design</h3>
+          <p>Mobile Apps (iOS/Android), SaaS Dashboards, Admin Panels, Hero Sections, Ad Banners, Design Systems.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Tools Stack</h3>
+          <p>Figma (Variables, Auto-layout, Interactive Components), FigJam, Adobe XD, Photoshop, Illustrator.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="services-section">
+    <div class="container">
+      <h2 class="section-title">Specialized Services</h2>
+      <div class="services-grid">
+        <div class="service-card tilt-card">
+          <h3>01. Mobile App Design</h3>
+          <p>End-to-end user-centric interfaces with responsive touch states and frictionless flows.</p>
+        </div>
+        <div class="service-card tilt-card">
+          <h3>02. Dashboards & Admin Panels</h3>
+          <p>Data visualization UI designed for clarity, high analytics productivity, and custom theme systems.</p>
+        </div>
+        <div class="service-card tilt-card">
+          <h3>03. High-Converting Hero Sections</h3>
+          <p>Landing page visuals built to drive high user conversion and retention.</p>
+        </div>
+        <div class="service-card tilt-card">
+          <h3>04. UX Prototyping</h3>
+          <p>Clickable, hyper-realistic prototype blueprints built in Figma.</p>
+        </div>
+        <div class="service-card tilt-card">
+          <h3>05. Digital Banners</h3>
+          <p>High-impact ad creatives and promotional graphics for multi-channel marketing campaigns.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Showcase -->
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <div class="projects-header">
+        <h2 class="section-title">Projects Showcase</h2>
+        <div class="filter-tabs" id="filterTabs">
+          <button class="tab active" data-category="all">All (<span id="count-all">635+</span>)</button>
+          <button class="tab" data-category="hero">Hero Sections (150+)</button>
+          <button class="tab" data-category="dashboard">Dashboards (90+)</button>
+          <button class="tab" data-category="mobile">Mobile Apps (120+)</button>
+          <button class="tab" data-category="banner">Banners (200+)</button>
+          <button class="tab" data-category="wireframe">Wireframes (75+)</button>
+        </div>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Dynamic Projects populated via JavaScript / Supabase -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <h2>Let's Build Something Great Together</h2>
+        <p>Direct inquiries, agency collaborations, or freelance projects.</p>
+        <ul class="contact-list">
+          <li><strong>Email:</strong> azanmoneymaker@gmail.com</li>
+          <li><strong>Phone/WhatsApp:</strong> +92 355-4051652</li>
+          <li><strong>Location:</strong> Gilgit, Pakistan</li>
+          <li><strong>Behance:</strong> behance.net/azanaliad</li>
+        </ul>
+      </div>
+
+      <form class="contact-form" id="hireForm">
+        <h3>Send a Message</h3>
+        <input type="text" id="clientName" placeholder="Your Full Name" required />
+        <input type="email" id="clientEmail" placeholder="Your Email Address" required />
+
+        <select id="projectType" required>
+          <option value="" disabled selected>Select Project Type</option>
+          <option value="Mobile App">Mobile App Design</option>
+          <option value="Dashboard">Dashboard / Admin Panel</option>
+          <option value="Hero Section">Hero Section / Web Design</option>
+          <option value="Wireframes">UX Wireframing & Prototyping</option>
+          <option value="Banners">Digital Ad Banners</option>
+          <option value="Full Package">Full Package UI/UX</option>
+        </select>
+
+        <select id="budgetRange" required>
+          <option value="" disabled selected>Select Budget Range</option>
+          <option value="Under $100">Under $100</option>
+          <option value="$100 - $300">$100 - $300</option>
+          <option value="$300 - $800">$300 - $800</option>
+          <option value="$800 - $1500">$800 - $1500</option>
+          <option value="$1500+">$1500+</option>
+        </select>
+
+        <textarea id="projectMessage" rows="5" placeholder="Tell me about your project..." required></textarea>
+
+        <button type="submit" class="btn btn-primary pulse-btn" id="submitBtn">Send Direct Inquiry</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© Azan Ali — All Rights Reserved.</p>
+      <span class="badge">Designed with Precision in Gilgit</span>
+      <a href="#home" class="back-to-top">↑ Top</a>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
